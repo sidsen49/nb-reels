@@ -38,7 +38,7 @@ const StepForm = ({ setBlog }) => {
         imageFile: element[`frame${index + 1}`]?.imageFile?.value, 
       }
     })
-    axios.post('http://34.87.125.23:8002/save-files/', exportData, {
+    axios.post('https://34.87.125.23:8002/save-files/', exportData, {
       headers: {
         'Content-Type': 'application/json'
       }
@@ -74,7 +74,7 @@ const StepForm = ({ setBlog }) => {
   }
 
   const getImageFiles = (text) => {
-    return axios.post('http://34.87.125.23:8001/predict', {
+    return axios.post('https://34.87.125.23:8001/predict', {
         "prompt": text,
         "width": 512,
         "height": 912,
@@ -154,7 +154,7 @@ const StepForm = ({ setBlog }) => {
   const videoJsonData = async () => {
     try {
       setLoader(true);
-      const response = await axios.post('http://34.87.125.23:8000/generate_reel/',
+      const response = await axios.post('https://34.87.125.23:8000/generate_reel/',
         {"url": `${formData.step1.value}`},
         { headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } }
       )
