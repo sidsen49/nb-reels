@@ -1,0 +1,148 @@
+.headLine {
+  color: #242424;
+  line-height: 52px;
+  font-size: 26px;
+  letter-spacing: -0.011em;
+  margin: 32px 0px;
+  font-weight: 700;
+}
+
+.blogOuterContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogInnerContainer {
+  width: 70vw;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.headLineContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #F8F8F8;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.blogPost {
+  margin: 2% 0%;
+  background-color: #F8F8F8;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogTextStyle {
+  line-height: 21px;
+  font-size: 16px;
+  color: #242424;
+}
+
+.profilePic {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%
+}
+
+.profileContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4% 0%;
+}
+
+.profileText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #242424;
+  margin-left: 2%;
+}
+
+.imageHolder {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.overLayScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.videoPopUp {
+  height: 100vh;
+  width: 100vh;
+}
+
+.videoOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.videoStyle {
+  aspect-ratio: 1;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  z-index: 20;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.crossIcon {
+  width: 44px;
+  height: 42px;
+  position: absolute;
+  right: 52px;
+  top: 51px;
+  z-index: 99;
+}

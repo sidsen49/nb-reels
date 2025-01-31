@@ -1,0 +1,221 @@
+.formContainer {
+  width: 70vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainerStyle {
+  width: 70vw;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.headerSection {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roundCircle {
+  height: 15px;
+  position: relative;
+  width: 32px;
+  background-color: #BBBBBB;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepName {
+  position: absolute;
+  color: #999999;
+  font-size: 16px;
+  top: -40px;
+  min-width: max-content;
+}
+
+.innerCircle {
+  height:10px;
+  width: 10px;
+  background-color: #5792FB;
+  border-radius: 50%;
+}
+
+.headerSectionContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.straightLine {
+  width: 100%;
+  height: 5px;
+  background-color: #DDDDDD;
+}
+
+.formBody {
+  height: 50vh;
+  width: 100%;
+  margin-top: 5%;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.formBodyStyle1 {
+  height: 50vh;
+  width: 100%;
+  margin-top: 5%;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.textInputStyle {
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  border: 1px solid #DDDDDD;
+}
+
+.buttonStyle {
+  background-color: #5792FB;
+  width: 180px;
+  height: 41px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 5%;
+  font-size: 18px;
+  color:white;
+  border:none
+}
+
+.headerText {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+
+.groupContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupOuterContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.frameGroups {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.textAreaStyle {
+  height: 50px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 1px solid #DDDDDD;
+}
+
+.frameImage {
+  height:100px;
+  width:100px
+}
+
+.overLayScreen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.loader::before,
+.loader::after {    
+  content:"";
+  grid-area: 1/1;
+  --c:no-repeat radial-gradient(farthest-side,#25b09b 92%,#0000);
+  background: 
+    var(--c) 50%  0, 
+    var(--c) 50%  100%, 
+    var(--c) 100% 50%, 
+    var(--c) 0    50%;
+  background-size: 12px 12px;
+  animation: l12 1s infinite;
+}
+.loader::before {
+  margin: 4px;
+  filter: hue-rotate(45deg);
+  background-size: 8px 8px;
+  animation-timing-function: linear
+}
+
+@keyframes l12 { 
+  100%{transform: rotate(.5turn)}
+}
+
+.submitChange {
+border-radius: 20px;
+padding: 8px;
+background-color: #88C273;
+border: none;
+margin-top: 2%;
+/* color: white; */
+font-weight: 600;
+}
+
+.step3Container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogButton {
+  width: 111px;
+  height: 34px;
+  margin-top: 5%;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+}
